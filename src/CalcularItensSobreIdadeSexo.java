@@ -13,7 +13,6 @@ public class CalcularItensSobreIdadeSexo {
 		var sexo = new String[10];
 		int numeroMulheres = 0, qtde=0; 
 		double mediaAlturaHomens=0, maiorAltura=0, menorAltura=10;
-		
 		var scanner = new Scanner(System.in);
 		
 		for (int i = 0; i < sexo.length; i++) {
@@ -21,9 +20,7 @@ public class CalcularItensSobreIdadeSexo {
 			altura[i] = scanner.nextDouble(); 
 			System.out.print("Digite o sexo da " + (i+1) +"º" + " pessoa: ");
 			sexo[i] = scanner.next();
-		}
-		
-		for (int i = 0; i < sexo.length; i++) {
+			
 			if (sexo[i].equalsIgnoreCase("feminino")) {
 				numeroMulheres++;
 			} else {
@@ -38,7 +35,6 @@ public class CalcularItensSobreIdadeSexo {
 			if(altura[i] > maiorAltura) {
 				maiorAltura = altura[i];
 			}
-			
 		}
 		
 		System.out.println("O mais alto do grupo tem: " + maiorAltura);
